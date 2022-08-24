@@ -10,4 +10,4 @@ Requieren una página web para la venta y promoción de sus productos, adicional
 
 
 ## Licencia
-Este proyecto está bajo la Licencia *MIT licence*. ver [LICENSE.md](LICENSE.md) para más detalles. 
+Este proyecto está bajo la Licencia *MIT licence*. ver [LICENSE](LICENSE) para más detalles. 
