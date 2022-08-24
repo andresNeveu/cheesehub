@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "name": "cheesehub",
+  "description": "ChesseHub es una empresa dedicada a la venta de pizzas en Colombia, han estado en el negocio por 12 años y se encuentra en un proceso de reestructuración, por eso han decicido contratar la creación de un sistemas de software para automatizar ciertas tareas.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresNeveu/cheesehub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresNeveu/cheesehub/issues"
+  },
+  "homepage": "https://github.com/andresNeveu/cheesehub#readme"
+}

@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: "DB"
+      POSTGRES_PASSWORD: "123"
+      PGDATA: /data/postgres
+    ports:
+      - "15432:5432"
+    networks:
+      - postgres
+    volumes:
+      - postgres:/data/postgres
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    volumes:
+    - pgadmin:/var/lib/pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "correo@pgadmin.com"
+      PGADMIN_DEFAULT_PASSWORD: "123"
+    ports:
+      - "16543:80"
+    networks:
+      - postgres
+    depends_on:
+      - postgres
+
+networks:
+  postgres:
+    driver: bridge
+volumes:
+    postgres:
+    pgadmin:
